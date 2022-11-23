@@ -1,0 +1,12 @@
+SQL FOR DATA ANALYSIS
+
+SQL is easy to understand.
+Traditional databases allow us to access data directly.
+Traditional databases allow us to audit and replicate our data.
+SQL is a great tool for analyzing multiple tables at once.
+SQL allows you to analyze more complex questions than dashboard tools like Google Analytics.
+
+The key to SQL is understanding statements. A few statements include:
+CREATE TABLE is a statement that creates a new table in a database.
+DROP TABLE is a statement that removes a table in a database.
+SELECT allows you to read data and display it. This is called a query.
