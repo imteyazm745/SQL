@@ -49,6 +49,10 @@ SELECT *
 FROM orders
 LIMIT 10;
 
+The ORDER BY statement allows us to sort our results using the data in any column. 
+The ORDER BY statement always comes in a query after the SELECT and FROM statements, but before the LIMIT statement. If you are using the LIMIT statement, it will always appear last. As you learn additional commands, the order of these statements will matter more.
+Pro Tip
+Remember DESC can be added after the column in your ORDER BY statement to sort in descending order, as the default is to sort in ascending order.
 
 
 
