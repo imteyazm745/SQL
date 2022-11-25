@@ -24,3 +24,13 @@ from orders
 which is also the same as:
 SeLeCt AcCoUnt_id
 FrOm oRdErS
+
+Use White Space in Queries
+SQL queries ignore spaces, so you can add as many spaces and blank lines between code as you want, and the queries are the same. This query
+SELECT account_id FROM orders
+is equivalent to this query:
+SELECT account_id
+FROM orders
+and this query (but please don't ever write queries like this):
+SELECT              account_id
+FROM               orders
