@@ -16,4 +16,8 @@ Standard_qty / standard_qty + gloss_qty + poster_qty
 standard_qty / (standard_qty + gloss_qty + poster_qty)
 It is likely that you mean to do the calculation as written in statement number 2!
 
+Q1. Create a column that divides the standard_amt_usd by the standard_qty to find the unit price for standard paper for each order. Limit the results to the first 10 orders, and include the id and account_id fields.
+select id, account_id, standard_amt_usd/standard_qty as unit_price
+from orders
+limit 10;
 
