@@ -1,0 +1,5 @@
+A new column that is a manipulation of the existing columns in our database.
+Creating a new column that is a combination of existing columns is known as a derived column (or "calculated" or "computed" column).
+Usually we want to give a name, or "alias," to your new column using the AS keyword.
+
+
