@@ -23,5 +23,7 @@ Q. Use the accounts table to find
         FROM accounts
         WHERE name LIKE '%s';
 
+IN - In command allows us to filter data based on several possible values. IN requires single quotation marks around non-numerical data. note you can include an apostrophe by putting two single quotes together. For example, Macy's in our workspace would be 'Macy''s'.
+
 
 
