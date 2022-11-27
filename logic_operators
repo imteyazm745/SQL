@@ -5,7 +5,9 @@ IN This allows you to perform operations similar to using WHERE and =, but for m
 NOT This is used with IN and LIKE to select all of the rows NOT LIKE or NOT IN a certain condition.
 AND & BETWEEN These allow you to combine operations where all combined conditions must be true.
 OR This allows you to combine operations where at least one of the combined conditions must be true.
-The LIKE operator is extremely useful for working with text. You will use LIKE within a WHERE clause. The LIKE operator is frequently used with %. The % tells us that we might want any number of characters leading up to a particular set of characters or following a certain set of characters, as we saw with the google syntax above.
+The LIKE operator is extremely useful for working with text. You will use LIKE within a WHERE clause. 
+The LIKE operator is frequently used with %. The % tells us that we might want any number of characters leading up to a particular 
+set of characters or following a certain set of characters, as we saw with the google syntax above.
 
 Q. Use the accounts table to find
 1. All the companies whose names start with 'C'.
@@ -23,7 +25,8 @@ Q. Use the accounts table to find
         FROM accounts
         WHERE name LIKE '%s';
 
-IN - In command allows us to filter data based on several possible values. IN requires single quotation marks around non-numerical data. note you can include an apostrophe by putting two single quotes together. For example, Macy's in our workspace would be 'Macy''s'.
+IN - In command allows us to filter data based on several possible values. IN requires single quotation marks around non-numerical data. 
+note you can include an apostrophe by putting two single quotes together. For example, Macy's in our workspace would be 'Macy''s'.
 
 Example 1
 Select * from demo.accounts
@@ -44,7 +47,8 @@ FROM web_events
 WHERE channel IN ('organic', 'adwords');
 
 NOT = Provides the inverse results for IN, LIKE, and similar operators.
-The NOT operator is an extremely useful operator for working with the previous two operators we introduced: IN and LIKE. By specifying NOT LIKE or NOT IN, we can grab all of the rows that do not meet a particular criteria.
+The NOT operator is an extremely useful operator for working with the previous two operators we introduced: IN and LIKE. 
+By specifying NOT LIKE or NOT IN, we can grab all of the rows that do not meet a particular criteria.
 Use the accounts table to find the account name, primary poc, and sales rep id for all stores except Walmart, Target, and Nordstrom.
 	select name,primary_poc,sales_rep_id
 	from accounts
@@ -55,7 +59,25 @@ SELECT *
 FROM web_events
 WHERE channel NOT IN ('organic', 'adwords');
 
+Use the accounts table to find:
 
+All the companies whose names do not start with 'C'.
+	SELECT *
+	FROM accounts
+	WHERE name NOT LIKE 'C%';
+
+All companies whose names do not contain the string 'one' somewhere in the name.
+	SELECT name
+	FROM accounts
+	WHERE name NOT LIKE '%one%';
+
+All companies whose names do not end with 's'.
+	SELECT *
+	FROM accounts
+	WHERE name NOT LIKE '%s';
+The AND operator is used within a WHERE statement to consider more than one logical clause at a time. Each time you link a new statement with an AND, 
+you will need to specify the column you are interested in looking at. You may link as many statements as you would like to consider at the same time. 
+This operator works with all of the operations we have seen so far including arithmetic operators (+, *, -, /). LIKE, IN, and NOT logic can also be linked together using the AND operator.
 
 
 
