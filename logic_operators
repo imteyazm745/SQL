@@ -18,6 +18,10 @@ Q. Use the accounts table to find
         FROM accounts
         WHERE name LIKE '%one%';
 
-3.  
+3. All companies whose names end with 's'.
+        SELECT name
+        FROM accounts
+        WHERE name LIKE '%s';
+
 
 
