@@ -33,4 +33,8 @@ Example 2
 Select * from demo.orders
 Where account_id IN (1001,1021’)
 
+Use the accounts table to find the account name, primary_poc, and sales_rep_id for Walmart, Target, and Nordstrom.
+	select name,primary_poc,sales_rep_id
+from accounts
+where name in (Walmart','Target', 'Nordstrom');
 
