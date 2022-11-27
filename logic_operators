@@ -38,3 +38,7 @@ Use the accounts table to find the account name, primary_poc, and sales_rep_id f
 from accounts
 where name in (Walmart','Target', 'Nordstrom');
 
+Use the web_events table to find all information regarding individuals who were contacted via the channel of organic or adwords.
+SELECT *
+FROM web_events
+WHERE channel IN ('organic', 'adwords');
