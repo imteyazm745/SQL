@@ -123,7 +123,10 @@ Example 2
 	WHERE (standard_qty = 0 or gloss_qty =  0 or poster_qty = 0)
 	AND occured_at >= ‘2016-10-01’
  
-
+Q1 :- find list of orders ids where either gloss_qty or poster_qty is greater than 4000. Only include the id field in the resulting table.
+	SELECT id
+	FROM orders
+	WHERE gloss_qty > 4000 OR poster_qty > 4000;
 
 
 
