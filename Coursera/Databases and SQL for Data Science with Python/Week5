@@ -1,1 +1,11 @@
+5.1 Working with Real World Datasets
+Working with csv files
+Many real data sets are .csv files
+.csv: Comma Separated Values
 
+Example: Dogs.CSV
+Id, Name of Dog, Breed (dominant breed if not pure breed)  ->first row contains attribute labels  which map to column name in a table
+
+1, Wolfie, German Shepherd
+2,Fluffy,Pomeranian
+3,Huggy,Labrador
